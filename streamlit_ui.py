@@ -80,7 +80,6 @@ context.update({
 })
 
 # button to submit and get differential diagnoses
-# Replace the end of your file with this structure
 if user_symptoms and st.button("Get Differential Diagnoses"):
     with st.spinner("⏳ Analyzing symptoms..."):
         response = get_differential_diagnoses(user_symptoms, context=context)
