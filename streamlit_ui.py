@@ -86,6 +86,9 @@ if user_symptoms and st.button("Get Differential Diagnoses"):
         if response:
             data = json.loads(response)
             st.session_state.current_analysis = data
+
+            # resetting chat history
+            st.session_state.chat_history = []
             
             session_record = {
                 "symptoms": user_symptoms,
