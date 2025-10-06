@@ -14,7 +14,7 @@ def display_analysis(data):
         """)
 
     st.markdown("---")
-    st.markdown(f"**⚠️ Red Flags:** {data["red_flags"]}")
+    st.markdown(f"**⚠️ Red Flags:** {data['red_flags']}")
     st.caption(data["disclaimer"])
 
 # CSS styling
